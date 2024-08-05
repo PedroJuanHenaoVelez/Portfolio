@@ -1,0 +1,33 @@
+
+.contact-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #2c3e50;
+    border-top: 2px solid #3498db;
+    border-bottom: 2px solid #3498db;
+    margin-top: 90px;
+    border-radius: 8px;
+}
+
+.contact-container h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 15px 0;
+}
+
+.contact-container a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
