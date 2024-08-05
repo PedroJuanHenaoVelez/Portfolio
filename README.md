@@ -46,6 +46,7 @@ https://scintillating-youtiao-e68813.netlify.app/
 ### Technology Stack
 - **React:** JavaScript library for building user interfaces.
 - **CSS:** Styling of the application is done with custom CSS.
+- **HTML:** Structure of the application uses some HTML.
 - **Netlify:** The project is hosted and deployed on Netlify.
 
 ### Contact
