@@ -32,7 +32,7 @@ These instructions will help you set up and run the project on your local machin
    ```bash
    npm start
 
-###OR
+### OR
 https://scintillating-youtiao-e68813.netlify.app/
 
 ### Folder Structure
