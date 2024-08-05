@@ -21,12 +21,15 @@ These instructions will help you set up and run the project on your local machin
    git clone https://github.com/yourusername/portfolio.git
 
 2. **Navigate to the project directory:**
+   ```bash
    cd portfolio
    
 3. **Install the dependencies:**
+   ```bash
    npm install
 
 4. **Start the development server:**
+   ```bash
    npm start
 
 ###OR
