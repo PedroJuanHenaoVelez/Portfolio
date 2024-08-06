@@ -1,4 +1,6 @@
+/* AboutMe.css */
 
+/* About Me Section */
 .about-container {
     padding: 40px;
     text-align: left;
@@ -25,9 +27,7 @@
 .profile-picture {
     width: 35%;
     max-width: 300px;
-    height: auto;
     border-radius: 12px;
-    flex-shrink: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,35 +42,7 @@
     color: #2c3e50;
 }
 
-@media (max-width: 768px) {
-    .about-content {
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-picture {
-        width: 50%;
-        max-width: 200px;
-    }
-
-    .about-text {
-        font-size: 1em;
-        max-height: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-picture {
-        width: 60%;
-        max-width: 150px;
-    }
-
-    .about-text {
-        font-size: 0.9em;
-        max-height: 350px;
-    }
-}
-
+/* Skills Section */
 .skills-container {
     margin-top: 40px;
     padding: 40px;
@@ -120,17 +92,13 @@
 
 .skill-item span {
     font-size: 1.1em;
-    color: #333;
     font-weight: bold;
     text-align: center;
+    color: #333;
 }
 
 .skill-item.advanced {
     background-color: #4e9df1;
-    color: white;
-}
-
-.skill-item.advanced span {
     color: white;
 }
 
@@ -139,15 +107,53 @@
     color: white;
 }
 
-.skill-item.intermediate span {
-    color: white;
-}
-
 .skill-item.beginner {
     background-color: #ecc44b;
     color: white;
 }
 
-.skill-item.beginner span {
-    color: white;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .about-text {
+        font-size: 1em;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 0.9em;
+        max-height: 350px;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+    }
+
+    .skill-item {
+        min-width: 100px;
+        margin-bottom: 10px;
+    }
 }
