@@ -71,22 +71,28 @@
     }
 }
 
-.skills-section {
+.skills-container {
     margin-top: 40px;
+    padding: 40px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.skills-section h2 {
+.skills-container h3 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
+    color: #003366;
     margin-bottom: 20px;
-    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .skill-item {
@@ -94,16 +100,54 @@
     flex-direction: column;
     align-items: center;
     width: 120px;
-    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.skill-logo {
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item img {
     width: 60px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.skill-item p {
+.skill-item span {
     font-size: 1.1em;
-    color: #555;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-item.advanced {
+    background-color: #4e9df1;
+    color: white;
+}
+
+.skill-item.advanced span {
+    color: white;
+}
+
+.skill-item.intermediate {
+    background-color: #58c973;
+    color: white;
+}
+
+.skill-item.intermediate span {
+    color: white;
+}
+
+.skill-item.beginner {
+    background-color: #ecc44b;
+    color: white;
+}
+
+.skill-item.beginner span {
+    color: white;
 }

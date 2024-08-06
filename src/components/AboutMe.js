@@ -24,54 +24,55 @@ function AboutMe() {
                     <h3>Hello! I'm Pedro Juan Henao, a student at EIA university in Medellín, Colombia. I'm twenty-two years old and currently studying Systems and Computing Engineering.</h3>
                     <h3>I have a background in various technological contexts, including programming, some mechatronics, and editing videos, among other things. I've worked on projects involving coding and building systems, and even worked on robotics, focusing on the chassis and structure of the robot itself.</h3>
                     <h3>Regarding my hobbies, I enjoy playing video games, going fishing, and making videos on YouTube. While gaming doesn't directly translate to programming skills, fishing has taught me patience, a valuable trait for coding and collaborating with others.</h3>
-                </div>
+                    </div>
             </div>
-            <div className="skills-section">
-                <h2>My Skills</h2>
+            
+            <div className="skills-container">
+                <h3>Skills</h3>
                 <div className="skills-grid">
-                    <div className="skill-item">
-                        <img src={javaLogo} alt="Java" className="skill-logo" />
-                        <p>Java (Advanced)</p>
+                    <div className="skill-item advanced">
+                        <img src={javaLogo} alt="Java" />
+                        <span>Java (Advanced)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={pythonLogo} alt="Python" className="skill-logo" />
-                        <p>Python (Intermediate)</p>
+                    <div className="skill-item intermediate">
+                        <img src={pythonLogo} alt="Python" />
+                        <span>Python (Intermediate)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={sqlLogo} alt="SQL" className="skill-logo" />
-                        <p>SQL (Intermediate)</p>
+                    <div className="skill-item intermediate">
+                        <img src={sqlLogo} alt="SQL" />
+                        <span>SQL (Intermediate)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={jsLogo} alt="JavaScript" className="skill-logo" />
-                        <p>JavaScript (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={jsLogo} alt="JavaScript" />
+                        <span>JavaScript (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={reactLogo} alt="React" className="skill-logo" />
-                        <p>React (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={reactLogo} alt="React" />
+                        <span>React (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={cssLogo} alt="CSS" className="skill-logo" />
-                        <p>CSS (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={cssLogo} alt="CSS" />
+                        <span>CSS (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={htmlLogo} alt="HTML" className="skill-logo" />
-                        <p>HTML (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={htmlLogo} alt="HTML" />
+                        <span>HTML (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={dockerLogo} alt="Docker" className="skill-logo" />
-                        <p>Docker (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={dockerLogo} alt="Docker" />
+                        <span>Docker (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={cppLogo} alt="C++" className="skill-logo" />
-                        <p>C++ (Intermediate)</p>
+                    <div className="skill-item intermediate">
+                        <img src={cppLogo} alt="C++" />
+                        <span>C++ (Intermediate)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={csharpLogo} alt="C#" className="skill-logo" />
-                        <p>C# (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={csharpLogo} alt="C#" />
+                        <span>C# (Beginner)</span>
                     </div>
-                    <div className="skill-item">
-                        <img src={kotlinLogo} alt="Kotlin" className="skill-logo" />
-                        <p>Kotlin (Beginner)</p>
+                    <div className="skill-item beginner">
+                        <img src={kotlinLogo} alt="Kotlin" />
+                        <span>Kotlin (Beginner)</span>
                     </div>
                 </div>
             </div>
