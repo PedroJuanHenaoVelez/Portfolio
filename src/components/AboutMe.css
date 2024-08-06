@@ -70,3 +70,40 @@
         max-height: 350px;
     }
 }
+
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+}
+
+.skill-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1.1em;
+    color: #555;
+}
