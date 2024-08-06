@@ -31,3 +31,28 @@
 .contact-container a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container h2 {
+        font-size: 2em;
+    }
+
+    .contact-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-container p {
+        font-size: 0.9em;
+    }
+
+    .contact-container a {
+        font-size: 1em;
+    }
+}

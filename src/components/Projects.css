@@ -93,42 +93,40 @@
     font-size: 1.5em;
 }
 
-@media (min-width: 1200px) {
-    .projects-container {
-        padding: 60px;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .project-nav button, .project-info h3, .project-info p {
-        font-size: 1.4em;
-    }
-
-    .project-window {
-        padding: 50px;
-        margin: 0;
+@media (max-width: 768px) {
+    .project-details {
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-window img, .project-window video {
-        max-width: 30%;
-        margin: 0;
+        max-width: 80%;
     }
 
     .project-info h3 {
-        margin: 10px 0;
+        font-size: 1.5em;
     }
 
-    p {
-        margin: 10px 0;
+    .project-info p {
+        font-size: 1.2em;
     }
 }
 
-@media (min-width: 1800px) {
-    .projects-container {
-        max-width: 1600px;
+@media (max-width: 480px) {
+    .project-nav button {
+        font-size: 1em;
+        padding: 15px 30px;
     }
 
-    .project-info, .project-window {
-        padding: 60px;
+    .project-window img, .project-window video {
+        max-width: 90%;
+    }
+
+    .project-info h3 {
+        font-size: 1.3em;
+    }
+
+    .project-info p {
+        font-size: 1em;
     }
 }
