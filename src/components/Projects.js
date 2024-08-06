@@ -1,33 +1,32 @@
-
 import React, { useState } from 'react';
 import './Projects.css';
 import team7403 from "../assets/Captura-de-Pantalla-2024-05-10-a-las-9.14.00-a.m-1200x1190.png";
 import photogate from "../assets/698506e8-b6b9-49a4-a000-e101828c17be.MP4";
-import sql from "../assets/1_KTDZHTVaVbvbyhIf2PmBAw.png"
+import sql from "../assets/1_KTDZHTVaVbvbyhIf2PmBAw.png";
 
 function Projects() {
     const projectList = [
         {
             title: 'Lightning Blue Lizards',
-            description: 'FIRST Robotics Competition.',
-            technologies: 'C++, Java and LabVIEW.',
-            role: 'Mechanic.',
+            description: 'Contributed to the FIRST Robotics Competition as a mechanic, working with C++, Java, and LabVIEW to build and program a competitive robot.',
+            technologies: 'C++, Java, LabVIEW',
+            role: 'Mechanic',
             link: 'https://frc-events.firstinspires.org/2024/team/7403',
             image: team7403
         },
         {
             title: 'Photogate',
-            description: 'Design and construct a photogate with a pair of LED-Photo resistors, in which we are to calculate the acceleration of gravity.',
-            technologies: 'C++.',
-            role: 'Builder of Photogate, assist with coding for the board alongside Juan David Oliveros.',
+            description: 'Designed and built a photogate system to measure acceleration due to gravity. Involved in both hardware construction and coding.',
+            technologies: 'C++',
+            role: 'Builder and coder',
             link: 'https://github.com/throwmen/GravityBlinky',
             video: photogate
         },
         {
-            title: 'Online Courses',
-            description: 'Database for a virtual "College" for maintaining data related to students, staff, courses, grades, etc... in Microsoft SQL Management Studio',
-            technologies: 'SQL.',
-            role: 'Worked alongside Johan Daniel Duque, Santiago Augusto Toro and Juan David Oliveros.',
+            title: 'Online Courses Database',
+            description: 'Developed a database system to manage data for an online college, including students, staff, and course information using SQL.',
+            technologies: 'SQL',
+            role: 'Database developer',
             link: 'https://github.com/Santy30-Bull/BD',
             image: sql
         }
@@ -54,7 +53,7 @@ function Projects() {
                 <p>{projectList[selectedProject].description}</p>
                 <p><strong>Technologies:</strong> {projectList[selectedProject].technologies}</p>
                 <p><strong>Role:</strong> {projectList[selectedProject].role}</p>
-                <a href={projectList[selectedProject].link}>Check it out</a>
+                <a href={projectList[selectedProject].link} target="_blank" rel="noopener noreferrer">Check it out</a>
                 {projectList[selectedProject].video ? (
                     <video controls>
                         <source src={projectList[selectedProject].video} type="video/mp4" />
