@@ -1,4 +1,4 @@
-
+/* About Container */
 .about-container {
     padding: 40px;
     text-align: left;
@@ -7,6 +7,7 @@
     background-color: #ffffff;
 }
 
+/* About Header */
 .about-container h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -14,6 +15,7 @@
     color: #2c3e50;
 }
 
+/* About Content */
 .about-content {
     display: flex;
     flex-direction: row;
@@ -40,6 +42,7 @@
     color: #2c3e50;
 }
 
+/* Skills Container */
 .skills-container {
     margin-top: 40px;
     padding: 40px;
@@ -57,19 +60,24 @@
     letter-spacing: 1.5px;
 }
 
+/* Skills Grid */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Adjust gap */
+    max-width: 100%; /* Ensure it does not exceed container width */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
+/* Skill Item */
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    padding: 20px;
+    flex: 1 1 120px; /* Allow flexibility */
+    max-width: 120px; /* Prevent items from becoming too large */
+    padding: 15px; /* Adjust padding */
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -83,17 +91,18 @@
 }
 
 .skill-item img {
-    width: 60px;
+    width: 50px; /* Adjust size of logos */
     height: auto;
     margin-bottom: 10px;
 }
 
 .skill-item span {
-    font-size: 1.1em;
+    font-size: 1em; /* Adjust font size */
     font-weight: bold;
     color: #333;
 }
 
+/* Skill Item Variants */
 .skill-item.advanced {
     background-color: #4e9df1;
     color: white;
@@ -109,6 +118,7 @@
     color: white;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .about-content {
         align-items: center;
@@ -127,6 +137,7 @@
 
     .skills-grid {
         gap: 15px;
+        max-width: 90%; /* Limit width for medium screens */
     }
 }
 
@@ -146,14 +157,21 @@
     }
 
     .skills-grid {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 10px;
+        flex-wrap: wrap; /* Allow items to wrap */
+        gap: 10px; /* Adjust gap */
+        max-width: 100%; /* Ensure it fits within container */
     }
 
     .skill-item {
-        min-width: 100px;
-        margin-bottom: 10px;
+        flex: 1 1 80px; /* Adjust flexibility and size */
+        max-width: 80px; /* Adjust max-width */
+    }
+
+    .skill-item img {
+        width: 40px; /* Adjust size of logos */
+    }
+
+    .skill-item span {
+        font-size: 0.9em; /* Adjust font size */
     }
 }
