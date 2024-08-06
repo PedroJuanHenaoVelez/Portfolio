@@ -109,3 +109,8 @@ h2 {
   background-color: #7f8c8d;
 }
 
+@media (max-width: 480px) {
+  .app-container {
+      scroll-snap-type: none;
+  }
+}
