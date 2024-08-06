@@ -1,8 +1,9 @@
+
 import React, { useState } from 'react';
 import './Projects.css';
 import team7403 from "../assets/Captura-de-Pantalla-2024-05-10-a-las-9.14.00-a.m-1200x1190.png";
 import photogate from "../assets/698506e8-b6b9-49a4-a000-e101828c17be.MP4";
-import sql from "../assets/1_KTDZHTVaVbvbyhIf2PmBAw.png";
+import sql from "../assets/databaseProject.png";
 
 function Projects() {
     const projectList = [

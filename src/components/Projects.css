@@ -1,4 +1,4 @@
-/* Projects Container */
+
 .projects-container {
     padding: 40px 20px;
     text-align: center;
@@ -7,7 +7,6 @@
     margin: auto;
 }
 
-/* Project Navigation */
 .project-nav {
     display: flex;
     justify-content: center;
